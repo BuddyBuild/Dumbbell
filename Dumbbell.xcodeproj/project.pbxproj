@@ -15,6 +15,8 @@
 		7A371B2E1EE8F4BC009AD30E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AB62E1EE886CC00D3C68E /* App.swift */; };
 		7A371B2F1EE8F4BC009AD30E /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AB6341EE88C4000D3C68E /* Build.swift */; };
 		7A371B301EE8F4BC009AD30E /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A371B1E1EE8F2D3009AD30E /* Formatter.swift */; };
+		7A371B321EE9CC14009AD30E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A371B311EE9CC14009AD30E /* Client.swift */; };
+		7A371B341EE9D2DB009AD30E /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A371B331EE9D2DB009AD30E /* ClientTests.swift */; };
 		7A8AB61E1EE885DE00D3C68E /* Dumbbell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8AB6141EE885DE00D3C68E /* Dumbbell.framework */; };
 		7A8AB6311EE888F900D3C68E /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AB6301EE888F900D3C68E /* AppTests.swift */; };
 		7A8AB6371EE89C0500D3C68E /* BuildTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AB6361EE89C0500D3C68E /* BuildTests.swift */; };
@@ -35,6 +37,8 @@
 		7A371B201EE8F446009AD30E /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 		7A371B221EE8F446009AD30E /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		7A371B231EE8F446009AD30E /* TestSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSummary.swift; sourceTree = "<group>"; };
+		7A371B311EE9CC14009AD30E /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		7A371B331EE9D2DB009AD30E /* ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTests.swift; sourceTree = "<group>"; };
 		7A8AB6141EE885DE00D3C68E /* Dumbbell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dumbbell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8AB6171EE885DE00D3C68E /* Dumbbell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dumbbell.h; sourceTree = "<group>"; };
 		7A8AB6181EE885DE00D3C68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				7A8AB62E1EE886CC00D3C68E /* App.swift */,
 				7A8AB6341EE88C4000D3C68E /* Build.swift */,
 				7A371B1E1EE8F2D3009AD30E /* Formatter.swift */,
+				7A371B311EE9CC14009AD30E /* Client.swift */,
 			);
 			path = Dumbbell;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 				7A8AB6241EE885DE00D3C68E /* Info.plist */,
 				7A8AB6301EE888F900D3C68E /* AppTests.swift */,
 				7A8AB6361EE89C0500D3C68E /* BuildTests.swift */,
+				7A371B331EE9D2DB009AD30E /* ClientTests.swift */,
 			);
 			path = DumbbellTests;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 				7A371B301EE8F4BC009AD30E /* Formatter.swift in Sources */,
 				7A371B291EE8F4BC009AD30E /* Links.swift in Sources */,
 				7A371B2E1EE8F4BC009AD30E /* App.swift in Sources */,
+				7A371B321EE9CC14009AD30E /* Client.swift in Sources */,
 				7A371B2A1EE8F4BC009AD30E /* TestSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A8AB6311EE888F900D3C68E /* AppTests.swift in Sources */,
+				7A371B341EE9D2DB009AD30E /* ClientTests.swift in Sources */,
 				7A8AB6371EE89C0500D3C68E /* BuildTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
