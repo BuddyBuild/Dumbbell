@@ -1,9 +1,9 @@
 import Foundation
 
 public struct App: Codable {
-    let id: String
-    let name: String
-    let platform: Platform
+    public let id: String
+    public let name: String
+    public let platform: Platform
 
     public enum Platform: String, Codable {
         case ios

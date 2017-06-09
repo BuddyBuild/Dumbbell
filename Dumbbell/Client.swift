@@ -46,6 +46,14 @@ public enum Result<T, E: Error> {
     case failure(E)
 }
 
+//extension Result: Equatable where T: Equatable, E: Equatable {
+//    static public func ==(lhs: Result, rhs: Result) -> Bool {
+//    switch (lhs, rhs) {
+//    case let (.success(value), .success(value2)):
+//        return value == value2
+//    }
+//}
+
 final public class Client {
 
     public enum ClientError: Error {
