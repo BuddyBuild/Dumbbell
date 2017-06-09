@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as! AppsViewController
 
         let window = UIWindow()
-        window.rootViewController = rootViewController
+        window.rootViewController = UINavigationController(rootViewController: rootViewController)
         window.makeKeyAndVisible()
         self.window = window
 
