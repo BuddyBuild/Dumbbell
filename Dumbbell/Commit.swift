@@ -1,6 +1,6 @@
 import Foundation
 
-struct Commit: Codable {
+public struct Commit: Codable {
     let tags: [String]
     let branch: String
     let sha: String

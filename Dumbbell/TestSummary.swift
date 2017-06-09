@@ -1,6 +1,6 @@
 import Foundation
 
-struct TestSummary: Codable {
+public struct TestSummary: Codable {
     let count: Int
     let passed: Int
     let codeCoverage: Double

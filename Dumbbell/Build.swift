@@ -1,6 +1,6 @@
 import Foundation
 
-struct Build: Codable {
+public struct Build: Codable {
     let id: String
     let appId: String
     let repoURL: URL
@@ -14,7 +14,7 @@ struct Build: Codable {
     let tests: TestSummary
     let links: Links
 
-    enum Status: String, Codable {
+    public enum Status: String, Codable {
         case failed
         case success
     }

@@ -1,5 +1,5 @@
 import Foundation
 
-struct Branch: Codable {
+public struct Branch: Codable {
     let name: String
 }
