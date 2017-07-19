@@ -1,0 +1,5 @@
+sources:
+    - Dumbbell
+templates:
+    - Templates
+output: Dumbbell/Generated
