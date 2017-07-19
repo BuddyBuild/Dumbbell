@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-bundle install sourcery
+brew install sourcery
 
 sourcery
