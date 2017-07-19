@@ -17,17 +17,10 @@
 		7A371B301EE8F4BC009AD30E /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A371B1E1EE8F2D3009AD30E /* Formatter.swift */; };
 		7A371B321EE9CC14009AD30E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A371B311EE9CC14009AD30E /* Client.swift */; };
 		7A371B341EE9D2DB009AD30E /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A371B331EE9D2DB009AD30E /* ClientTests.swift */; };
-		7A371B3E1EEA06E6009AD30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A371B3D1EEA06E6009AD30E /* AppDelegate.swift */; };
-		7A371B401EEA06E6009AD30E /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A371B3F1EEA06E6009AD30E /* AppsViewController.swift */; };
-		7A371B431EEA06E6009AD30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A371B411EEA06E6009AD30E /* Main.storyboard */; };
-		7A371B451EEA06E6009AD30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A371B441EEA06E6009AD30E /* Assets.xcassets */; };
-		7A371B481EEA06E6009AD30E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A371B461EEA06E6009AD30E /* LaunchScreen.storyboard */; };
 		7A8AB61E1EE885DE00D3C68E /* Dumbbell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8AB6141EE885DE00D3C68E /* Dumbbell.framework */; };
 		7A8AB6311EE888F900D3C68E /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AB6301EE888F900D3C68E /* AppTests.swift */; };
 		7A8AB6371EE89C0500D3C68E /* BuildTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AB6361EE89C0500D3C68E /* BuildTests.swift */; };
-		7A9DEA9C1EEA16F3007D846D /* Dumbbell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8AB6141EE885DE00D3C68E /* Dumbbell.framework */; };
-		7A9DEA9D1EEA16F3007D846D /* Dumbbell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8AB6141EE885DE00D3C68E /* Dumbbell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7A9DEAA21EEA2ED9007D846D /* ApplicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DEAA11EEA2ED9007D846D /* ApplicationCell.swift */; };
+		7A8DBC401F1FAF66006D65D7 /* Sourcery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DBC3F1F1FAF66006D65D7 /* Sourcery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,28 +31,7 @@
 			remoteGlobalIDString = 7A8AB6131EE885DE00D3C68E;
 			remoteInfo = Dumbbell;
 		};
-		7A9DEA9E1EEA16F3007D846D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A8AB60B1EE885DD00D3C68E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7A8AB6131EE885DE00D3C68E;
-			remoteInfo = Dumbbell;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7A9DEAA01EEA16F3007D846D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7A9DEA9D1EEA16F3007D846D /* Dumbbell.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7A371B1E1EE8F2D3009AD30E /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
@@ -68,13 +40,6 @@
 		7A371B231EE8F446009AD30E /* TestSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSummary.swift; sourceTree = "<group>"; };
 		7A371B311EE9CC14009AD30E /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		7A371B331EE9D2DB009AD30E /* ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTests.swift; sourceTree = "<group>"; };
-		7A371B3B1EEA06E6009AD30E /* Buddybuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buddybuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A371B3D1EEA06E6009AD30E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A371B3F1EEA06E6009AD30E /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
-		7A371B421EEA06E6009AD30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7A371B441EEA06E6009AD30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7A371B471EEA06E6009AD30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7A371B491EEA06E6009AD30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A8AB6141EE885DE00D3C68E /* Dumbbell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dumbbell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8AB6171EE885DE00D3C68E /* Dumbbell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dumbbell.h; sourceTree = "<group>"; };
 		7A8AB6181EE885DE00D3C68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,18 +50,10 @@
 		7A8AB6321EE88BC100D3C68E /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
 		7A8AB6341EE88C4000D3C68E /* Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		7A8AB6361EE89C0500D3C68E /* BuildTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTests.swift; sourceTree = "<group>"; };
-		7A9DEAA11EEA2ED9007D846D /* ApplicationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCell.swift; sourceTree = "<group>"; };
+		7A8DBC3F1F1FAF66006D65D7 /* Sourcery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sourcery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7A371B381EEA06E6009AD30E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A9DEA9C1EEA16F3007D846D /* Dumbbell.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7A8AB6101EE885DE00D3C68E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,26 +72,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A371B3C1EEA06E6009AD30E /* Buddybuild */ = {
-			isa = PBXGroup;
-			children = (
-				7A371B3D1EEA06E6009AD30E /* AppDelegate.swift */,
-				7A371B3F1EEA06E6009AD30E /* AppsViewController.swift */,
-				7A371B411EEA06E6009AD30E /* Main.storyboard */,
-				7A371B441EEA06E6009AD30E /* Assets.xcassets */,
-				7A371B461EEA06E6009AD30E /* LaunchScreen.storyboard */,
-				7A371B491EEA06E6009AD30E /* Info.plist */,
-				7A9DEAA11EEA2ED9007D846D /* ApplicationCell.swift */,
-			);
-			path = Buddybuild;
-			sourceTree = "<group>";
-		};
 		7A8AB60A1EE885DD00D3C68E = {
 			isa = PBXGroup;
 			children = (
 				7A8AB6161EE885DE00D3C68E /* Dumbbell */,
 				7A8AB6211EE885DE00D3C68E /* DumbbellTests */,
-				7A371B3C1EEA06E6009AD30E /* Buddybuild */,
 				7A8AB6151EE885DE00D3C68E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,7 +86,6 @@
 			children = (
 				7A8AB6141EE885DE00D3C68E /* Dumbbell.framework */,
 				7A8AB61D1EE885DE00D3C68E /* DumbbellTests.xctest */,
-				7A371B3B1EEA06E6009AD30E /* Buddybuild.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +103,7 @@
 				7A8AB6341EE88C4000D3C68E /* Build.swift */,
 				7A371B1E1EE8F2D3009AD30E /* Formatter.swift */,
 				7A371B311EE9CC14009AD30E /* Client.swift */,
+				7A8DBC3F1F1FAF66006D65D7 /* Sourcery.swift */,
 			);
 			path = Dumbbell;
 			sourceTree = "<group>";
@@ -190,25 +132,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7A371B3A1EEA06E6009AD30E /* Buddybuild */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7A371B4A1EEA06E6009AD30E /* Build configuration list for PBXNativeTarget "Buddybuild" */;
-			buildPhases = (
-				7A371B371EEA06E6009AD30E /* Sources */,
-				7A371B381EEA06E6009AD30E /* Frameworks */,
-				7A371B391EEA06E6009AD30E /* Resources */,
-				7A9DEAA01EEA16F3007D846D /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7A9DEA9F1EEA16F3007D846D /* PBXTargetDependency */,
-			);
-			name = Buddybuild;
-			productName = Buddybuild;
-			productReference = 7A371B3B1EEA06E6009AD30E /* Buddybuild.app */;
-			productType = "com.apple.product-type.application";
-		};
 		7A8AB6131EE885DE00D3C68E /* Dumbbell */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A8AB6281EE885DE00D3C68E /* Build configuration list for PBXNativeTarget "Dumbbell" */;
@@ -255,9 +178,6 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Buddybuild;
 				TargetAttributes = {
-					7A371B3A1EEA06E6009AD30E = {
-						CreatedOnToolsVersion = 9.0;
-					};
 					7A8AB6131EE885DE00D3C68E = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
@@ -283,22 +203,11 @@
 			targets = (
 				7A8AB6131EE885DE00D3C68E /* Dumbbell */,
 				7A8AB61C1EE885DE00D3C68E /* DumbbellTests */,
-				7A371B3A1EEA06E6009AD30E /* Buddybuild */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7A371B391EEA06E6009AD30E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A371B481EEA06E6009AD30E /* LaunchScreen.storyboard in Resources */,
-				7A371B451EEA06E6009AD30E /* Assets.xcassets in Resources */,
-				7A371B431EEA06E6009AD30E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7A8AB6121EE885DE00D3C68E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,16 +226,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7A371B371EEA06E6009AD30E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A371B401EEA06E6009AD30E /* AppsViewController.swift in Sources */,
-				7A371B3E1EEA06E6009AD30E /* AppDelegate.swift in Sources */,
-				7A9DEAA21EEA2ED9007D846D /* ApplicationCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7A8AB60F1EE885DE00D3C68E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +234,7 @@
 				7A371B2B1EE8F4BC009AD30E /* Branch.swift in Sources */,
 				7A371B2F1EE8F4BC009AD30E /* Build.swift in Sources */,
 				7A371B301EE8F4BC009AD30E /* Formatter.swift in Sources */,
+				7A8DBC401F1FAF66006D65D7 /* Sourcery.swift in Sources */,
 				7A371B291EE8F4BC009AD30E /* Links.swift in Sources */,
 				7A371B2E1EE8F4BC009AD30E /* App.swift in Sources */,
 				7A371B321EE9CC14009AD30E /* Client.swift in Sources */,
@@ -360,65 +260,9 @@
 			target = 7A8AB6131EE885DE00D3C68E /* Dumbbell */;
 			targetProxy = 7A8AB61F1EE885DE00D3C68E /* PBXContainerItemProxy */;
 		};
-		7A9DEA9F1EEA16F3007D846D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7A8AB6131EE885DE00D3C68E /* Dumbbell */;
-			targetProxy = 7A9DEA9E1EEA16F3007D846D /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		7A371B411EEA06E6009AD30E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A371B421EEA06E6009AD30E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7A371B461EEA06E6009AD30E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A371B471EEA06E6009AD30E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		7A371B4B1EEA06E6009AD30E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8VS9JKFDZS;
-				INFOPLIST_FILE = Buddybuild/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.Buddybuild;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7A371B4C1EEA06E6009AD30E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8VS9JKFDZS;
-				INFOPLIST_FILE = Buddybuild/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.Buddybuild;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		7A8AB6261EE885DE00D3C68E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -605,15 +449,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7A371B4A1EEA06E6009AD30E /* Build configuration list for PBXNativeTarget "Buddybuild" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7A371B4B1EEA06E6009AD30E /* Debug */,
-				7A371B4C1EEA06E6009AD30E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7A8AB60E1EE885DD00D3C68E /* Build configuration list for PBXProject "Dumbbell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

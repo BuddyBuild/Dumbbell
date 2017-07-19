@@ -35,3 +35,4 @@ public struct Build: Codable {
     }
 }
 
+extension Build: AutoEquatable {}
