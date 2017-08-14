@@ -1,9 +1,10 @@
+// swiftlint:disable function_body_length
 import XCTest
 @testable import Dumbbell
 
 class AppTests: XCTestCase {
-    
-    func testAppIsDecoded() {
+
+    func testAppIsDecoded() throws {
         let payload = """
 [
       {
@@ -19,7 +20,7 @@ class AppTests: XCTestCase {
 ]
 """.data(using: .utf8)!
         let decoder = JSONDecoder()
-        let apps: [App] = try! decoder.decode(Array<App>.self, from: payload)
+        let apps: [App] = try decoder.decode(Array<App>.self, from: payload)
         XCTAssertEqual(apps.count, 2)
     }
 }

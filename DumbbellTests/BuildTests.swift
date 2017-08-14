@@ -1,10 +1,11 @@
+// swiftlint:disable function_body_length
 import XCTest
 
 @testable import Dumbbell
 
 class BuildTests: XCTestCase {
 
-    func testBuildsAreDecoded() {
+    func testBuildsAreDecoded() throws {
         let payload = """
 [{
 "_id": "58b899061baced0100616172",
@@ -48,7 +49,7 @@ class BuildTests: XCTestCase {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(Formatter.date)
 
-        let builds = try! decoder.decode(Array<Build>.self, from: payload)
+        let builds = try decoder.decode(Array<Build>.self, from: payload)
         XCTAssertEqual(builds.count, 1)
     }
 }

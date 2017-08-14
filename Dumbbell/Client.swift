@@ -40,19 +40,10 @@ func urlRequest<Value>(_ request: Request<Value>, credentials: Client.APIKey) ->
     return builtRequest
 }
 
-
 public enum Result<T, E: Error> {
     case success(T)
     case failure(E)
 }
-
-//extension Result: Equatable where T: Equatable, E: Equatable {
-//    static public func ==(lhs: Result, rhs: Result) -> Bool {
-//    switch (lhs, rhs) {
-//    case let (.success(value), .success(value2)):
-//        return value == value2
-//    }
-//}
 
 final public class Client {
 
@@ -86,7 +77,10 @@ final public class Client {
             if let error = error {
                 completion(.failure(.networkError(error)))
             } else {
-                let statusCode = (response as! HTTPURLResponse).statusCode
+                guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
+                    return completion(.failure(.internalError))
+                }
+
                 if statusCode >= 400 && statusCode < 600 {
                     completion(.failure(.requestError(statusCode)))
                 } else {

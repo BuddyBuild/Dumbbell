@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Buddybuild
-//
-//  Created by Romain Pouclet on 2017-08-14.
-//  Copyright © 2017 Buddybuild. All rights reserved.
-//
-
 import UIKit
 import Dumbbell
 
@@ -16,6 +8,7 @@ class ViewController: UIViewController {
         let token = ProcessInfo.processInfo.environment["BUDDYBUILD_TOKEN"]!
 
         let c = Client(credentials: Client.APIKey(token))
+        // we should print something
         c.execute(Apps.list) { result in
             switch result {
             case let .success(apps):
@@ -25,6 +18,4 @@ class ViewController: UIViewController {
             }
         }
     }
-
 }
-
