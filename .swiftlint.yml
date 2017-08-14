@@ -1,0 +1,15 @@
+excluded:
+  - "Dumbbell/Generated"
+identifier_name:
+  excluded:
+    - id
+line_length: 150
+custom_rules:
+  use_new_logging_framework:
+    included: ".*\\.swift"
+    name: "Use os.log framework because it's great"
+    regex: "(NSLog|print)\\("
+    severity: warning
+    match_kinds:
+      - identifier
+
