@@ -2,4 +2,4 @@
 
 mkdir buddybuild_artifacts
 
-swiftlint --reporter junit | tee buddybuild_artifacts/swiftlint.xml || true
+swiftlint --reporter junit > buddybuild_artifacts/swiftlint.xml || true
