@@ -34,7 +34,7 @@ NEW_VERSION=`bundle exec scripts/bump_spec_version.rb`
 
 git add Dumbbell.podspec.json
 git commit -m "[skip ci] Release version $NEW_VERSION"
-git tag "release/$NEW_VERSION"
+git tag $NEW_VERSION
 git push origin $BUDDYBUILD_BRANCH --tags
 
 ## Big thanks to Kyle Fuller who saved me the time to look for
