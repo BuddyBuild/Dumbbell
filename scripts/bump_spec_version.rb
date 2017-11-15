@@ -3,7 +3,7 @@
 require 'logger'
 require 'cocoapods-core'
 
-logger = Logger.new(STDOUT)
+logger = Logger.new(STDERR)
 
 @workspace = $BUDDYBUILD_WORKSPACE ||= "."
 @podspec_path = "#{@workspace}/Dumbbell.podspec.json"
@@ -20,3 +20,5 @@ logger.info("New podspec version is " + @new_version.to_s)
 
 File.open(@podspec_path, "w") { |file| file.puts @podspec.to_pretty_json }
 logger.info("Podspec has been updated")
+
+puts @new_version.to_s
