@@ -32,7 +32,7 @@ NEW_VERSION=`bundle exec scripts/bump_spec_version.rb`
 git add Dumbbell.podspec.json
 git commit -m "[skip ci] Release version $NEW_VERSION"
 git tag "release/$NEW_VERSION"
-git push --tags
+# git push --tags
 
 if [[ -z "${COCOAPODS_TRUNK_TOKEN}" ]]; then
     echo "COCOAPODS_TRUNK_TOKEN is not defined: not pushing to trunk." >&2
