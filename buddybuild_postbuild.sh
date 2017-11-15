@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -ueo pipefail
+set -e
 
 chruby 2.3.1
 
