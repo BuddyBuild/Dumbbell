@@ -5,7 +5,7 @@
 ## https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
 set -e
 
-if [[ "$BUDDYBUILD_BRANCH" =~ "auto-release" ]]; then
+if [[ ! "$BUDDYBUILD_BRANCH" =~ "auto-release" ]]; then
     echo "Branch is not master/auto-release, aborting!" >&2
     exit 1
 fi
