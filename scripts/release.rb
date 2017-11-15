@@ -10,9 +10,10 @@ logger = Logger.new(STDOUT)
 
 @podspec = Pod::Specification.from_file(@podspec_path)
 @new_minor_version = @podspec.version.minor + 1
-logger.info("New podspec version is " + @new_minor_version.to_s)
 
 @new_version = Pod::Version.new("#{@podspec.version.major}.#{@new_minor_version}.#{@podspec.version.patch}")
+
+logger.info("New podspec version is " + @new_version.to_s)
 
 @podspec.version= @new_version
 @podspec.source = {:git => @podspec.source[:git], :tag => @new_version.to_s}
