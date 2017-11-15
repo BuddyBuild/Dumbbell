@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
+require 'logger'
 require 'cocoapods-core'
+
 logger = Logger.new(STDOUT)
 
 @workspace = $BUDDYBUILD_WORKSPACE ||= "."
