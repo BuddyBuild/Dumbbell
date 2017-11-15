@@ -34,6 +34,10 @@ git commit -m "[skip ci] Release version $NEW_VERSION"
 git tag "release/$NEW_VERSION"
 # git push --tags
 
+## Big thanks to Kyle Fuller who saved me the time to look for
+## the token that cocoadocs uses. Turns out you just have to look into
+## you ~/.netrc file. More info available in this blog post:
+## https://fuller.li/posts/automated-cocoapods-releases-with-ci/
 if [[ -z "${COCOAPODS_TRUNK_TOKEN}" ]]; then
     echo "COCOAPODS_TRUNK_TOKEN is not defined: not pushing to trunk." >&2
     exit 1
