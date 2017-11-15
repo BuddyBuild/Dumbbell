@@ -5,8 +5,11 @@
 ## https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
 set -e
 
-if [[ ! "$BUDDYBUILD_BRANCH" =~ "auto-release" ]]; then
-    echo "Branch is not master/auto-release, aborting!" >&2
+## We only want to run this script when we merge on master
+## Adapt this so it works for your specific workflow
+## Some teams use a release branch.
+if [[ ! "$BUDDYBUILD_BRANCH" =~ "master" ]]; then
+    echo "Branch is not master, aborting!" >&2
     exit 1
 fi
 
@@ -32,7 +35,7 @@ NEW_VERSION=`bundle exec scripts/bump_spec_version.rb`
 git add Dumbbell.podspec.json
 git commit -m "[skip ci] Release version $NEW_VERSION"
 git tag "release/$NEW_VERSION"
-# git push --tags
+git push origin $BUDDYBUILD_BRANCH --tags
 
 ## Big thanks to Kyle Fuller who saved me the time to look for
 ## the token that cocoadocs uses. Turns out you just have to look into
@@ -43,4 +46,5 @@ if [[ -z "${COCOAPODS_TRUNK_TOKEN}" ]]; then
     exit 1
 else
     echo "Releasing"
+    pod trunk 
 fi
