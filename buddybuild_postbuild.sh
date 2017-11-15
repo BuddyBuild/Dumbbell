@@ -45,6 +45,5 @@ if [[ -z "${COCOAPODS_TRUNK_TOKEN}" ]]; then
     echo "COCOAPODS_TRUNK_TOKEN is not defined: not pushing to trunk." >&2
     exit 1
 else
-    echo "Releasing"
-    pod trunk 
+    pod trunk push "$BUDDYBUILD_WORKSPACE/Dumbbell.podspec.json"
 fi
